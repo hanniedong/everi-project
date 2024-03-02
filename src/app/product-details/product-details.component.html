@@ -1,0 +1,18 @@
+<div class="container">
+  <div class = "header">
+    <div class="back-button-container">
+      <button (click)="goBack()" class="btn btn-secondary back-button">Back</button>
+    </div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">{{ cartCount }}</span>
+    </div>
+  </div>
+  <div class="product-detail">
+    <h2>{{ product.name }}</h2>
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price }}</p>
+    <button (click)="addToCart()">Add to Cart</button>
+</div>
+</div>
